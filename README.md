@@ -290,6 +290,7 @@ Feedstock Maintainers
 =====================
 
 * [@pkgw](https://github.com/pkgw/)
+* [@ryanvolz](https://github.com/ryanvolz/)
 * [@sebastian-luna-valero](https://github.com/sebastian-luna-valero/)
 * [@tschoonj](https://github.com/tschoonj/)
 
