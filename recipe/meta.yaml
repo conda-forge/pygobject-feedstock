@@ -1,7 +1,8 @@
 {% set local_glib_pin = ">=2.64" %}
 {% set local_glib_pin = ">=2.64" %}
+{% set local_glib_pin = ">=2.64" %}
 {% set name = "pygobject" %}
-{% set version = "3.48.2" %}
+{% set version = "3.50.0" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
 {% set local_glib_pin = '>=2.64' %}
 
@@ -11,7 +12,7 @@ package:
 
 source:
   url: https://download.gnome.org/sources/{{ name }}/{{ majmin }}/{{ name }}-{{ version }}.tar.xz
-  sha256: 0794aeb4a9be31a092ac20621b5f54ec280f9185943d328b105cdae6298ad1a7
+  sha256: 8d836e75b5a881d457ee1622cae4a32bcdba28a0ba562193adb3bbb472472212
 
 build:
   number: 0
@@ -20,6 +21,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - meson
     - ninja
     - pkg-config

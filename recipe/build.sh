@@ -6,13 +6,10 @@ set -ex
 export PKG_CONFIG=$BUILD_PREFIX/bin/pkg-config
 
 meson_config_args=(
-  --prefix="$PREFIX"
   --wrap-mode=nofallback
-  --buildtype=release
   --backend=ninja
-  -Dlibdir=lib
   -Dtests=false
-  -D python="$PYTHON"
+  -Dpython="$PYTHON"
 )
 
 meson setup forgebuild ${MESON_ARGS} "${meson_config_args[@]}"
