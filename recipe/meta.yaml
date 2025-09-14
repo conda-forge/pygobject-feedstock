@@ -33,6 +33,7 @@ requirements:
     # conda-build to add its global pin if one exists.
     - glib {{ local_glib_pin }}
     - glib
+    - libglib
     - gobject-introspection >=1.64
     - libffi
     - pycairo
