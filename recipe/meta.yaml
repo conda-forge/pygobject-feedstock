@@ -37,6 +37,7 @@ requirements:
     - libffi
     - pycairo
     - python
+    - zlib
   run:
     - libgirepository
     - libiconv  # on Windows we seem to need the conda-forge version here (see #15)
