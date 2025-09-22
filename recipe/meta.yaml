@@ -1,10 +1,7 @@
 {% set local_glib_pin = ">=2.64" %}
-{% set local_glib_pin = ">=2.64" %}
-{% set local_glib_pin = ">=2.64" %}
 {% set name = "pygobject" %}
 {% set version = "3.50.0" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
-{% set local_glib_pin = '>=2.64' %}
 
 package:
   name: {{ name|lower }}
