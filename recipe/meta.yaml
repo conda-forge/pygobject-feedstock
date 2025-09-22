@@ -29,6 +29,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - cairo
+    - expat
     # This dep is intentionally written twice; the second time allows
     # conda-build to add its global pin if one exists.
     - glib {{ local_glib_pin }}
