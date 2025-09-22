@@ -15,7 +15,7 @@ source:
   sha256: 8d836e75b5a881d457ee1622cae4a32bcdba28a0ba562193adb3bbb472472212
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<38]
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - cairo
+    - expat
     # This dep is intentionally written twice; the second time allows
     # conda-build to add its global pin if one exists.
     - glib {{ local_glib_pin }}
@@ -37,6 +38,7 @@ requirements:
     - libffi
     - pycairo
     - python
+    - zlib
   run:
     - libgirepository
     - libiconv  # on Windows we seem to need the conda-forge version here (see #15)
