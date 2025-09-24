@@ -3,15 +3,15 @@ About pygobject-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygobject-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pygobject.readthedocs.io
+Home: https://pygobject.gnome.org
 
 Package license: LGPL-2.1-or-later
 
 Summary: Python bindings for GObject Introspection
 
-Development: https://git.gnome.org/browse/pygobject
+Development: https://gitlab.gnome.org/GNOME/pygobject
 
-Documentation: https://pygobject.readthedocs.io
+Documentation: https://pygobject.gnome.org
 
 PyGObject is a Python package which provides bindings for GObject based libraries
 such as GTK+, GStreamer, WebKitGTK+, GLib, GIO and many more.

@@ -1,6 +1,6 @@
-{% set local_glib_pin = ">=2.64" %}
+{% set local_glib_pin = ">=2.80" %}
 {% set name = "pygobject" %}
-{% set version = "3.50.0" %}
+{% set version = "3.54.2" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
 
 package:
@@ -8,13 +8,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://download.gnome.org/sources/{{ name }}/{{ majmin }}/{{ name }}-{{ version }}.tar.xz
-  sha256: 8d836e75b5a881d457ee1622cae4a32bcdba28a0ba562193adb3bbb472472212
+  url: https://download.gnome.org/sources/{{ name }}/{{ majmin }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 03cffeb49d8a1879b621d8f606ac904218019a0ae699b1cd3780a8ee611e696b
   patches:
     - windows.patch  # [win]
 
 build:
-  number: 3
+  number: 0
   skip: true  # [py<38]
 
 requirements:
@@ -61,7 +61,7 @@ test:
 
 
 about:
-  home: https://pygobject.readthedocs.io
+  home: https://pygobject.gnome.org
   license: LGPL-2.1-or-later
   license_family: LGPL
   license_file: COPYING
@@ -71,8 +71,8 @@ about:
     PyGObject is a Python package which provides bindings for GObject based libraries
     such as GTK+, GStreamer, WebKitGTK+, GLib, GIO and many more.
 
-  doc_url: https://pygobject.readthedocs.io
-  dev_url: https://git.gnome.org/browse/pygobject
+  doc_url: https://pygobject.gnome.org
+  dev_url: https://gitlab.gnome.org/GNOME/pygobject
 
 extra:
   recipe-maintainers:
