@@ -19,6 +19,7 @@ set ^"MESON_OPTIONS=^
   --buildtype=release ^
   --backend=ninja ^
   -Dtests=false ^
+  -Dpycairo=enabled ^
   -Dpython="%PYTHON%" ^
   -Dpython.platlibdir="%SP_DIR%" ^
   -Dpython.purelibdir="%SP_DIR%" ^

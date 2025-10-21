@@ -9,6 +9,7 @@ meson_config_args=(
   --wrap-mode=nofallback
   --backend=ninja
   -Dtests=false
+  -Dpycairo=enabled
   -Dpython="$PYTHON"
 )
 
