@@ -39,6 +39,7 @@ requirements:
     - libffi
     - pycairo
     - python
+    - xorg-xorgproto   # [linux]
     - zlib
   run:
     - libgirepository
