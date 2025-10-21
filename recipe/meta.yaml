@@ -16,7 +16,7 @@ source:
     - windows.patch  # [win]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
 
 requirements:
@@ -54,6 +54,7 @@ test:
     - gi
     - gi.pygtkcompat
     - gi.repository.GLib
+    - gi._gi_cairo
   commands:
     # verify that header gets installed and can be located through pkg-config
     - test -f $PREFIX/include/pygobject-3.0/pygobject.h  # [unix]
