@@ -16,7 +16,7 @@ source:
     - windows.patch  # [win]
 
 build:
-  number: 2
+  number: 3
   skip: true  # [py<38]
 
 requirements:
