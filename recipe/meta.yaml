@@ -12,8 +12,6 @@ package:
 source:
   url: https://download.gnome.org/sources/{{ name }}/{{ majmin }}/{{ name }}-{{ version }}.tar.gz
   sha256: b816098969544081de9eecedb94ad6ac59c77e4d571fe7051f18bebcec074313
-  patches:
-    - windows.patch  # [win]
 
 build:
   number: 0
