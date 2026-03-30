@@ -2,7 +2,7 @@
 {% set local_glib_pin = ">=2.80" %}
 {% set local_glib_pin = ">=2.80" %}
 {% set name = "pygobject" %}
-{% set version = "3.54.5" %}
+{% set version = "3.56.2" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
 
 package:
@@ -11,12 +11,10 @@ package:
 
 source:
   url: https://download.gnome.org/sources/{{ name }}/{{ majmin }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b6656f6348f5245606cf15ea48c384c7f05156c75ead206c1b246c80a22fb585
-  patches:
-    - windows.patch  # [win]
+  sha256: b816098969544081de9eecedb94ad6ac59c77e4d571fe7051f18bebcec074313
 
 build:
-  number: 3
+  number: 0
   skip: true  # [py<38]
 
 requirements:
@@ -41,6 +39,7 @@ requirements:
     - python
     - xorg-xorgproto   # [linux]
     - zlib
+    - freetype
   run:
     - libgirepository
     - libiconv  # on Windows we seem to need the conda-forge version here (see #15)
@@ -53,7 +52,6 @@ test:
     - pkg-config
   imports:
     - gi
-    - gi.pygtkcompat
     - gi.repository.GLib
     - gi._gi_cairo
   commands:
