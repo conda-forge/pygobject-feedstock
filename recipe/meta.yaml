@@ -1,8 +1,9 @@
 {% set local_glib_pin = ">=2.80" %}
 {% set local_glib_pin = ">=2.80" %}
 {% set local_glib_pin = ">=2.80" %}
+{% set local_glib_pin = ">=2.80" %}
 {% set name = "pygobject" %}
-{% set version = "3.56.2" %}
+{% set version = "3.56.3" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
 
 package:
@@ -11,7 +12,7 @@ package:
 
 source:
   url: https://download.gnome.org/sources/{{ name }}/{{ majmin }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b816098969544081de9eecedb94ad6ac59c77e4d571fe7051f18bebcec074313
+  sha256: 12760e4a0e3d04b6eb95e06f7a27e362c826d567ea613373a92c003b6c70d2d6
 
 build:
   number: 0
