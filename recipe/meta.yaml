@@ -12,7 +12,8 @@ source:
   sha256: 45068697de3ffe46840ca369705f23118b34db4f7deb63f6eff079a6734ddcca
 
 build:
-  number: 2
+  number: 3
+  skip: true  # [win and arm64 and py < 314]
 
 requirements:
   build:
@@ -42,7 +43,7 @@ requirements:
     - libiconv  # on Windows we seem to need the conda-forge version here (see #15)
     - pycairo
     - python
-    - ucrt  # [win]
+    - ucrt  # [win and not arm64]
 
 test:
   requires:
