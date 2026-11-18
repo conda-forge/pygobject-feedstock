@@ -21,7 +21,7 @@ requirements:
     - {{ stdlib("c") }}
     - meson
     - ninja
-    - pkg-config
+    - pkgconf
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
@@ -47,7 +47,7 @@ requirements:
 
 test:
   requires:
-    - pkg-config
+    - pkgconf
   imports:
     - gi
     - gi.repository.GLib
