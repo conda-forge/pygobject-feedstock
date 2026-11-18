@@ -1,5 +1,7 @@
 c_compiler:
-- vs2022
+- vs
+c_compiler_version:
+- '2022'
 c_stdlib:
 - vs
 cairo:
@@ -24,8 +26,5 @@ python:
 - 3.13.* *_cp313
 target_platform:
 - win-64
-zip_keys:
-- - python
-  - channel_sources
 zlib:
 - '1'
